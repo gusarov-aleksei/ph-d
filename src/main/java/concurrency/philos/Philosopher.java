@@ -23,8 +23,8 @@ public class Philosopher implements Runnable {
     private int attemptsCounter=0;//TODO rename to thinkingCounter
     private int eatingCounter=0;//successful attempts
     private boolean unlimited=false;
-    // true - Philosopher will performParty party till external thread interruption
-    // false - Philosopher will performParty party till attemptsCounter be expectedAttempts
+    // true - Philosopher stops performing when thread is interrupted externally
+    // false - Philosopher stops performing when attemptsCounter = expectedAttempts
 
     public static class Builder {
         private Chopstick leftChopstick;
