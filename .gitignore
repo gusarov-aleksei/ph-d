@@ -1,0 +1,4 @@
+# ignore all files in directory named below
+build/
+out/
+.gradle/
